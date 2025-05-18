@@ -36,3 +36,28 @@ updates:
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
       - dependency-name: "com.vaadin:*"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
+
+  - package-ecosystem: npm
+    directory: /integration-tests/hybrid-smoke-tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /integration-tests/hybrid-vaadin-router-smoke-tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /integration-tests/smoke-tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /lit/runtime/src/main/codestarts/quarkus/quakus-hilla-maven-codestart/base
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /react/runtime/src/main/codestarts/quarkus/quakus-hilla-maven-codestart/base
+    schedule:
+      interval: daily
